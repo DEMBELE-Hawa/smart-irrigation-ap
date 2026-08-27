@@ -1,0 +1,13 @@
+# Dumps & backups
+*.sql
+
+# Secrets / env
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
