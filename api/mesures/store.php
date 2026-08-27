@@ -4,8 +4,10 @@ require_once __DIR__ . '/../../utils/response.php';
 
 headers();
 
-// Clé secrète partagée avec Node-RED
-define('NODE_RED_KEY', 'smart_irrigation_2026');
+// Clé secrète partagée avec Node-RED.
+// En prod (Railway) : definie via la variable d'environnement NODE_RED_KEY.
+// Tant que la variable n'est pas definie, l'ancienne clé reste acceptee (transition).
+define('NODE_RED_KEY', getenv('NODE_RED_KEY') ?: 'smart_irrigation_2026');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     error(405, 'Méthode non autorisée');
