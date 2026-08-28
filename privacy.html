@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Sunu Météo</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+       line-height:1.6;color:#1a1a1a;max-width:760px;margin:0 auto;padding:28px 20px 80px}
+  h1{font-size:1.7rem;margin-bottom:.2em}
+  h2{font-size:1.2rem;margin-top:2em;border-bottom:1px solid #e2e2e2;padding-bottom:.3em}
+  h3{font-size:1.02rem;margin-top:1.4em}
+  .meta{color:#666;font-size:.92rem;margin-bottom:2em}
+  ul{padding-left:1.2em}
+  li{margin:.35em 0}
+  code{background:#f2f2f2;padding:1px 5px;border-radius:4px;font-size:.92em}
+  a{color:#1565C0}
+  footer{margin-top:3em;color:#666;font-size:.88rem;border-top:1px solid #e2e2e2;padding-top:1em}
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité de l'application « Sunu Météo »</h1>
+<p class="meta">
+  Dernière mise à jour : 28 août 2026<br>
+  Éditeur : Hawa Dembele — projet personnel / académique<br>
+  Contact : <a href="mailto:hdembele06@gmail.com">hdembele06@gmail.com</a>
+</p>
+
+<p>
+  La présente politique explique quelles données personnelles l'application mobile
+  <strong>Sunu Météo</strong> (« l'application ») collecte, pourquoi, comment elles sont
+  utilisées et protégées, et quels sont vos droits. En créant un compte et en utilisant
+  l'application, vous acceptez les pratiques décrites ci-dessous.
+</p>
+
+<h2>1. Qui est responsable du traitement</h2>
+<p>
+  Le responsable du traitement est <strong>Hawa Dembele</strong>, développeuse de l'application,
+  joignable à l'adresse <a href="mailto:hdembele06@gmail.com">hdembele06@gmail.com</a>.
+  L'application est reliée à une station de mesure connectée (capteurs météo et d'humidité du sol)
+  et à un service serveur qui stocke les comptes et les mesures.
+</p>
+
+<h2>2. Données que nous collectons</h2>
+
+<h3>2.1. Données de compte (fournies par vous)</h3>
+<ul>
+  <li>Nom et prénom</li>
+  <li>Adresse e-mail</li>
+  <li>Numéro de téléphone (facultatif)</li>
+  <li>Mot de passe — jamais stocké en clair : il est transformé par un algorithme de hachage
+      irréversible (<code>bcrypt</code>) avant enregistrement</li>
+</ul>
+
+<h3>2.2. Données techniques et journaux de connexion</h3>
+<ul>
+  <li>Jeton d'authentification (JWT) généré à la connexion, conservé sur votre appareil
+      pour vous garder connecté·e</li>
+  <li>Journal des connexions : date et heure des connexions, tentatives échouées,
+      adresse IP au moment de la connexion, action effectuée (connexion, inscription,
+      changement de mot de passe). Ces informations servent à la sécurité du compte.</li>
+</ul>
+
+<h3>2.3. Données des capteurs</h3>
+<p>
+  L'application affiche des mesures issues de la station : température, humidité de l'air,
+  humidité du sol, pluie, vent, pression, luminosité, avec leur horodatage.
+  Ces mesures concernent l'environnement de la station et
+  <strong>ne constituent pas des données personnelles</strong>.
+</p>
+
+<h3>2.4. Autorisations de l'appareil</h3>
+<ul>
+  <li><strong>Accès à Internet / état du réseau</strong> : nécessaire pour communiquer avec le serveur.</li>
+  <li><strong>Notifications</strong> : utilisées uniquement pour vous alerter localement
+      lorsqu'un seuil de capteur est dépassé (sol trop sec, forte chaleur, etc.).
+      Aucune donnée n'est envoyée à un tiers à cette occasion.</li>
+</ul>
+
+<h3>2.5. Ce que nous ne collectons pas</h3>
+<ul>
+  <li>Pas de localisation GPS</li>
+  <li>Pas d'accès aux contacts, photos, micro, caméra ou fichiers</li>
+  <li>Pas de publicité, pas de traceurs publicitaires, pas d'outils d'analyse comportementale
+      (Google Analytics, Firebase Analytics, etc.)</li>
+</ul>
+
+<h2>3. Comment nous utilisons vos données</h2>
+<ul>
+  <li>Créer et gérer votre compte, et vous authentifier</li>
+  <li>Vous donner accès aux mesures de la station et à l'historique</li>
+  <li>Vous envoyer des alertes locales en cas de dépassement de seuil</li>
+  <li>Assurer la sécurité (détection de tentatives de connexion anormales)</li>
+  <li>Permettre à un administrateur de gérer les comptes et les stations</li>
+</ul>
+<p>Nous n'utilisons pas vos données à des fins publicitaires ni de profilage.</p>
+
+<h2>4. Base légale</h2>
+<p>
+  Le traitement repose sur l'<strong>exécution du service</strong> que vous demandez
+  (fournir un compte et l'accès aux mesures) et sur notre <strong>intérêt légitime</strong>
+  à sécuriser le service. Les alertes par notification reposent sur votre consentement,
+  que vous pouvez retirer à tout moment dans les réglages de votre téléphone.
+</p>
+
+<h2>5. Partage des données</h2>
+<p>
+  Vos données <strong>ne sont ni vendues, ni louées, ni transmises</strong> à des tiers
+  à des fins commerciales. Elles sont uniquement traitées par :
+</p>
+<ul>
+  <li><strong>Vous</strong> et, le cas échéant, l'<strong>administrateur</strong> du système ;</li>
+  <li><strong>Railway</strong> (railway.app), l'hébergeur qui fait tourner le serveur et la
+      base de données. Railway agit comme sous-traitant technique et n'exploite pas vos données
+      pour son propre compte.</li>
+</ul>
+<p>
+  Nous pouvons divulguer des données si la loi l'exige (réquisition d'une autorité compétente).
+</p>
+
+<h2>6. Hébergement et transfert des données</h2>
+<p>
+  Les comptes et les mesures sont stockés sur l'infrastructure de Railway, qui peut être
+  située hors du Sénégal (notamment aux États-Unis ou en Europe). Les échanges entre
+  l'application et le serveur sont chiffrés (HTTPS/TLS).
+</p>
+
+<h2>7. Durée de conservation</h2>
+<ul>
+  <li>Données de compte : conservées tant que le compte existe.</li>
+  <li>Journaux de connexion : conservés pour une durée limitée à des fins de sécurité,
+      puis supprimés ou anonymisés.</li>
+  <li>Après suppression du compte, les données personnelles associées sont effacées
+      (voir section 9).</li>
+</ul>
+
+<h2>8. Sécurité</h2>
+<ul>
+  <li>Communications chiffrées via HTTPS/TLS</li>
+  <li>Mots de passe hachés avec <code>bcrypt</code> (jamais stockés ni transmis en clair)</li>
+  <li>Authentification par jeton signé (JWT) à durée de validité limitée</li>
+  <li>Accès à la base de données restreint au serveur de l'application</li>
+</ul>
+<p>
+  Aucun système n'est infaillible ; nous nous efforçons de protéger vos données avec des
+  moyens raisonnables.
+</p>
+
+<h2>9. Vos droits</h2>
+<p>
+  Conformément à la loi sénégalaise n° 2008-12 du 25 janvier 2008 sur la protection des
+  données à caractère personnel (et, pour les utilisateurs concernés, au RGPD), vous disposez
+  des droits suivants :
+</p>
+<ul>
+  <li><strong>Accès</strong> : obtenir une copie des données vous concernant</li>
+  <li><strong>Rectification</strong> : corriger vos informations — possible directement dans
+      l'écran « Profil » de l'application</li>
+  <li><strong>Effacement</strong> : demander la suppression de votre compte et de vos données</li>
+  <li><strong>Opposition et limitation</strong> : vous opposer à certains traitements</li>
+  <li><strong>Portabilité</strong> : recevoir vos données dans un format lisible</li>
+</ul>
+<p>
+  Pour exercer ces droits, écrivez à
+  <a href="mailto:hdembele06@gmail.com">hdembele06@gmail.com</a>.
+  Une réponse vous sera apportée dans un délai raisonnable. Vous pouvez également saisir
+  la Commission de protection des données personnelles (CDP) du Sénégal.
+</p>
+
+<h2>10. Suppression du compte et des données</h2>
+<p>
+  Pour demander la suppression de votre compte et des données personnelles associées
+  (nom, prénom, e-mail, téléphone, journaux de connexion), envoyez un e-mail à
+  <a href="mailto:hdembele06@gmail.com">hdembele06@gmail.com</a> depuis l'adresse
+  associée à votre compte, avec pour objet « Suppression de compte Sunu Météo ».
+  La suppression est effectuée sous 30 jours. Les mesures des capteurs, qui ne sont pas
+  des données personnelles, peuvent être conservées de façon anonyme.
+</p>
+
+<h2>11. Cookies et traceurs</h2>
+<p>
+  L'application n'utilise pas de cookies publicitaires ni de traceurs tiers. Seul un
+  stockage local technique est utilisé sur votre appareil pour conserver votre session
+  (jeton de connexion et informations de profil).
+</p>
+
+<h2>12. Enfants</h2>
+<p>
+  L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte pas
+  sciemment leurs données.
+</p>
+
+<h2>13. Modifications de cette politique</h2>
+<p>
+  Cette politique peut être mise à jour. En cas de changement important, la date de
+  « Dernière mise à jour » en haut de page sera modifiée. Nous vous invitons à la consulter
+  régulièrement.
+</p>
+
+<h2>14. Contact</h2>
+<p>
+  Pour toute question relative à cette politique ou au traitement de vos données :<br>
+  <strong>Hawa Dembele</strong><br>
+  E-mail : <a href="mailto:hdembele06@gmail.com">hdembele06@gmail.com</a>
+</p>
+
+<footer>
+  Application « Sunu Météo » — station météo et irrigation intelligente.
+  Ce document est fourni à des fins d'information et constitue la politique de
+  confidentialité officielle de l'application publiée sur Google Play.
+</footer>
+
+</body>
+</html>
