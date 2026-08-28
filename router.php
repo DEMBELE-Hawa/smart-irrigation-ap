@@ -2,6 +2,13 @@
 $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 $file = __DIR__ . $uri;
 
+// Politique de confidentialite (Play Store) - route explicite
+if ($uri === '/privacy' || $uri === '/privacy.html' || $uri === '/privacy/') {
+    header('Content-Type: text/html; charset=utf-8');
+    readfile(__DIR__ . '/privacy.html');
+    return true;
+}
+
 // Fichier direct (ex: /api/auth/login.php ou /ping.php)
 if (is_file($file)) {
     return false;
